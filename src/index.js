@@ -1,9 +1,9 @@
 // import _ from 'lodash';
 import './style.css'
-import Favicon from './favicon.png'
-import Data from './data.json'
-import csvData from './data.csv'
-import xmlData from './data.xml'
+import Favicon from './assets/favicon.png'
+import Data from './assets/data.json'
+import csvData from './assets/data.csv'
+import xmlData from './assets/data.xml'
 import toml from './assets/data.toml'
 import yaml from './assets/data.yaml'
 import json from './assets/data.json5'
