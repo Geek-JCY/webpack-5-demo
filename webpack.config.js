@@ -1,10 +1,20 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
+  mode: 'development',
+  entry: {
+    a: {
+      import: './src/module/test/a.js',
+      library: {
+        name: 'ALibrary',
+        type: 'umd',
+        umdNamedDefine: true
+      }
+    }
   },
-  module: {}
+  output: {
+    path: path.resolve(__dirname, './dist'),
+    publicPath: '/dist/',
+    filename: '[name].bundle.js'
+  }
 }

@@ -1,11 +1,3 @@
-import _ from 'lodash';
-
-function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
+export function testA(name) {
+  console.log(`testA ${name}`)
 }
-
-document.body.appendChild(component());
