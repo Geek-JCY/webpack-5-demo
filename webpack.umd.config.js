@@ -1,4 +1,5 @@
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -13,8 +14,13 @@ module.exports = {
     }
   },
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, './dist/a/'),
+    publicPath: './',
     filename: '[name].bundle.js'
-  }
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'test library.type:umd'
+    })
+  ]
 }

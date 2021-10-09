@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js"
+    "build": "webpack --config webpack.umd.config.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.2.0",
     "csv-loader": "^3.0.3",
+    "html-webpack-plugin": "^5.3.2",
     "json5": "^2.2.0",
     "style-loader": "^3.2.1",
     "toml": "^3.0.0",
