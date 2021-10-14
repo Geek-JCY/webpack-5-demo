@@ -1,11 +1,12 @@
-import _ from 'lodash';
-
-function component() {
-  const element = document.createElement('div');
-
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
+const testBabel = (arg) => {
+  console.log(arg)
+  return new Promise((resolve, reject) => {
+    resolve(`${arg}_11`)
+  })
 }
 
-document.body.appendChild(component());
+// this.test1 = testBabel
+
+testBabel.bind(window)
+
+testBabel(111).then((res) => { console.log(res) })
